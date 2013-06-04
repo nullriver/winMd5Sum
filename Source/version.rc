@@ -1,0 +1,39 @@
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#include "version.h"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION MAJOR,MINOR,RELEASE,BUILD
+ PRODUCTVERSION MAJOR,MINOR,RELEASE,BUILD
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "Nullriver Software"
+            VALUE "FileDescription", "Create MD5 check sums"
+            VALUE "FileVersion", VERSION_STRING
+            VALUE "InternalName", "winMd5Sum"
+            VALUE "LegalCopyright", "Copyright (C) 2002-2005"
+            VALUE "OriginalFilename", "winMd5Sum.exe"
+            VALUE "ProductName", "winMd5Sum"
+            VALUE "ProductVersion", VERSION_STRING
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
